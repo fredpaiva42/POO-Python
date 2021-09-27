@@ -162,7 +162,7 @@ class Conta
 
 ## None e Coletor de lixo
 
-Nós podemos ter dois objetos com os mesmos valores e referência, mas quando isso acontece a referência irá sempre apontar para o objeto criado mais recentemente, com isso o primeiro objeto criado fica ocupando espaço de memória, mas sem que consigamos acessa-lo, pois agora ele perdeu sua referencia. Porém no Python existe um processo que procura por esses objetos que foram abandonados, com isso esses objetos são apagados e o espaço livre da memória pode ser reutilizado, o nome desse processo que Python possui é **Garbage Collector**(Coletor de lixo).
+Nós podemos ter dois objetos com os mesmos valores e referência, mas quando isso acontece a referência irá sempre apontar para o objeto criado mais recentemente, com isso o primeiro objeto criado fica ocupando espaço de memória, mas sem que consigamos acessá-lo, pois agora ele perdeu sua referência. Porém no Python existe um processo que procura por esses objetos que foram abandonados, com isso esses objetos são apagados e o espaço livre da memória pode ser reutilizado, o nome desse processo que Python possui é **Garbage Collector**(Coletor de lixo).
 
 **Obs**: Nos podemos ter um objeto com várias referencias diferentes e podemos usar qualquer uma delas para acessar os atributos desse objeto. E é a ai que entra o **None** com ele nos podemos desfazer qualquer uma dessas referencias, com o uso do **None** vamos estar indicando que a referencia não aponta mais para aquele objeto.
 
@@ -171,7 +171,7 @@ Exemplo de como desfazer uma referencia:
 ```python
 conta = Conta(123, "Fulano", 75.87, 1000.0)
 
-# agora vamos usar outra referencia para apontar para esse mesmo objeto:
+# agora vamos usar outra referência para apontar para esse mesmo objeto:
 conta2 = conta
 
 # agora vamos ver como desreferencia-lo:
