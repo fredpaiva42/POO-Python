@@ -84,7 +84,7 @@ Exemplo de definição de atributos com o uso da função construtora:
 
 ```
 
-Na criação do objeto com suas características se não passarmos a quantidade exata de atributos que foram definidos teremos um erro, a não ser que seja um atributo que foi definido com um padrão, nesse caso se não for passado o atributo, o valor padrão entra no lugar.
+Na criação do objeto com suas características se não passarmos a quantidade exata de atributos que foram definidos teremos um erro, a não ser que seja um atributo que foi definido como padrão, nesse caso se não for passado o atributo, o valor padrão entra no lugar.
 
 Como exemplo vamos supor que a loja seja somente de bolos de casamento e eventualmente ela produza para outros eventos, mas o padrão é o tipo Bolo de casamento:
 
