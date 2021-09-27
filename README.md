@@ -114,3 +114,68 @@ Como acessar os atributos:
 
   # com isso conseguimos ver exclusivamente o tamanho do nosso bolo encomendado.
 ```
+
+## Métodos
+
+-> Métodos são as funcionalidades que o nosso objeto tem ou aquilo que ele pode realizar. Esses métodos devem ser adicionados na classe.
+
+- Para acessar um método devemos usar a referência do objeto + . + nome do método.
+
+Vamos usar o exemplo de uma conta de banco como objeto e vamos acessar suas funcionalidades que serão mostrar o extrato, sacar e depositar.
+
+```python
+class Conta
+  # definindo os atributos da conta:
+  def __init__(self, numero, titular, saldo, limite):
+    self.numero = numero
+    self.titular = titular
+    self.saldo = saldo
+    self.limite = limite
+
+  # criando os métodos(funcionalidades) dessa conta:
+  def extrato(self):
+    print("O saldo do titular: {}, é de R${}".format(self.titular, self.saldo))
+
+  def sacar(self, quantidade):
+    self.saldo -= quantidade
+
+  def depositar(self, quantidade):
+    self.saldo += quantidade
+
+  # Mostrar como acessar o método:
+
+  # importar a classe do arquivo.
+  from conta import Conta
+
+  # criar o objeto e passar seus atributos
+  conta = Conta(123, "Fulano", 100.0, 1000.0)
+
+  # para acessar o método extrato devemos primeiro passar a referencia do objeto que queremos e depois qual funcionalidade desse objeto queremos:
+  conta.extrato()
+
+  # Com isso é impresso:
+  "O saldo do titular: Fulano, é de R$100.0"
+
+  # E o sacar e depositar funcionam da mesma maneira.
+
+```
+
+## None e Coletor de lixo
+
+Nós podemos ter dois objetos com os mesmos valores e referência, mas quando isso acontece a referência irá sempre apontar para o objeto criado mais recentemente, com isso o primeiro objeto criado fica ocupando espaço de memória, mas sem que consigamos acessa-lo, pois agora ele perdeu sua referencia. Porém no Python existe um processo que procura por esses objetos que foram abandonados, com isso esses objetos são apagados e o espaço livre da memória pode ser reutilizado, o nome desse processo que Python possui é **Garbage Collector**(Coletor de lixo).
+
+**Obs**: Nos podemos ter um objeto com várias referencias diferentes e podemos usar qualquer uma delas para acessar os atributos desse objeto. E é a ai que entra o **None** com ele nos podemos desfazer qualquer uma dessas referencias, com o uso do **None** vamos estar indicando que a referencia não aponta mais para aquele objeto.
+
+Exemplo de como desfazer uma referencia:
+
+```python
+conta = Conta(123, "Fulano", 75.87, 1000.0)
+
+# agora vamos usar outra referencia para apontar para esse mesmo objeto:
+conta2 = conta
+
+# agora vamos ver como desreferencia-lo:
+conta2 = None
+
+# pronto agora conta2 já não aponta para mais nada.
+```
