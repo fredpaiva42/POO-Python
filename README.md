@@ -8,7 +8,7 @@
 
 ## Por que é importante aprender sobre paradigmas?
 
-→ Pois cada paradigma surgiu por conta de necessidades diferentes, ou seja entre eles terão alguns que serão mais eficientes para resolver um determinado tipo de problema do que outros. E quando p paradigma escolhido é o melhor para aquele problema específico, isso traz mais **produtividade, um padrão que a equipe deve seguir na solução daquele problema, melhor legibilidade e maior facilidade de manutenção do código.**
+→ Pois cada paradigma surgiu por conta de necessidades diferentes, ou seja entre eles terão alguns que serão mais eficientes para resolver um determinado tipo de problema do que outros. E quando o paradigma escolhido é o melhor para aquele problema específico, isso traz mais **produtividade, um padrão que a equipe deve seguir na solução daquele problema, melhor legibilidade e maior facilidade de manutenção do código.**
 
 ---
 
@@ -34,13 +34,13 @@ Para que uma linguagem de programação seja do tipo de paradigma orientado a ob
 
 ## Classe, Objeto e Referência
 
-Uma classe é como se fosse uma receita para a preparação de um bolo, onde a receita é a **classe**, o bolo é o **objeto** e os ingredientes seus **atributos**.
+Uma classe é como se fosse uma receita para a preparação de um bolo, onde a receita é a **classe**, o bolo é o **objeto** e as características como tamanho, recheio, cobertura seus **atributos**.
 
 - Uma **Classe** é uma especificação de um tipo, definindo valores e comportamentos.
 
 - Um **Objeto** é uma instância de uma classe onde podemos definir valores para seus atributos.
 
-<br>Para definirmos uma classe em Python basta que usemos a palavra **class** seguida do nome que escolhemos para a classe, é uma boa prática na criação de uma classe de adotar o padrão **CamelCase** para nomea-la.
+Para definirmos uma classe em Python basta que usemos a palavra **class** seguida do nome que escolhemos para a classe, é uma boa prática na criação de uma classe de adotar o padrão **CamelCase** para nomeá-la.
 
 Exemplo de definição de uma classe:
 
@@ -84,7 +84,7 @@ Exemplo de definição de atributos com o uso da função construtora:
 
 ```
 
-Na criação do objeto com suas características se não passarmos a quantidade exata de atributos que foram definidos teremos um erro, a não que seja um atributo que foi definido com um padrão, nesse caso se não for passado o atributo, o valor padrão entra no lugar.
+Na criação do objeto com suas características se não passarmos a quantidade exata de atributos que foram definidos teremos um erro, a não ser que seja um atributo que foi definido com um padrão, nesse caso se não for passado o atributo, o valor padrão entra no lugar.
 
 Como exemplo vamos supor que a loja seja somente de bolos de casamento e eventualmente ela produza para outros eventos, mas o padrão é o tipo Bolo de casamento:
 
